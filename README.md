@@ -1,28 +1,28 @@
 Master
 
-ssh-keygen
-cd .ssh
-cat id_ed25519.pub (copy)
-sudo su - root
-sudo su - ubuntu
+ssh-keygen\
+cd .ssh\
+cat id_ed25519.pub (copy)\
+sudo su - root\
+sudo su - ubuntu\
 
-node1:
-cd .ssh
-vi authorized_keys
+node1:\
+cd .ssh\
+vi authorized_keys\
 paste
-sudo su - root
-sudo su - ubuntu
+sudo su - root\
+sudo su - ubuntu\
 
-node2:
-cd .ssh
-vi authorized_keys
+node2:\
+cd .ssh\
+vi authorized_keys\
 paste
-sudo su - root
-sudo su - ubuntu
+sudo su - root\
+sudo su - ubuntu\
 
 Master:
 
-ssh ubuntu@node1IP (check)
+ssh ubuntu@node1IP (check)\
 ssh ubuntu@node2IP (check)
 
 Install Ansible
