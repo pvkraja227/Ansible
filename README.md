@@ -7,6 +7,7 @@ sudo su - root\
 sudo su - ubuntu
 
 node1:\
+
 cd .ssh\
 vi authorized_keys\
 paste\
@@ -14,6 +15,7 @@ sudo su - root\
 sudo su - ubuntu
 
 node2:\
+
 cd .ssh\
 vi authorized_keys\
 paste\
