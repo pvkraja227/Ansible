@@ -38,7 +38,7 @@ ansible --version
 
 sudo vi /etc/ansible/ansible.cfg\
 
-[defaults] \
+add -> [defaults] \
 inventory = /etc/ansible/hosts \
 remote_user = ubuntu \
 private_key_file = /home/ubuntu/.ssh/id_ed25519 \
