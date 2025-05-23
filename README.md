@@ -37,17 +37,12 @@ sudo apt install ansible -y
 ansible --version
 
 sudo vi /etc/ansible/ansible.cfg\
-add -> inventory= /etc/ansible/hosts - save\
-ansible-config init --disabled -t all > ansible.cfg
 
-OR 
+[defaults] \
+inventory = /etc/ansible/hosts \
+remote_user = ubuntu \
+private_key_file = /home/ubuntu/.ssh/id_ed25519 \
 
-(((
-[defaults]
-inventory = /etc/ansible/hosts
-remote_user = ubuntu
-private_key_file = /home/ubuntu/.ssh/id_ed25519
-)))
 
 sudo vi /etc/ansible/hosts\
 add -> [webservers]\
