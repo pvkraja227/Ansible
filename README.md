@@ -27,7 +27,7 @@ Master:
 ssh ubuntu@node1IP (check)\
 ssh ubuntu@node2IP (check)
 
-Install Ansible
+Install Ansible in Master
 
 sudo apt update\
 sudo apt install software-properties-common\
@@ -36,6 +36,18 @@ sudo apt install ansible -y
 
 ansible --version
 
+1.)
+
+vi inventory
+paste both nodes private IP's
+esc:wq!
+
+ansible -i inventory all -m ping (o/p: ping pong)
+
+OR OR OR
+
+2.)
+
 sudo vi /etc/ansible/ansible.cfg\
 
 add -> \
@@ -43,7 +55,6 @@ add -> \
 inventory = /etc/ansible/hosts \
 remote_user = ubuntu \
 private_key_file = /home/ubuntu/.ssh/id_ed25519 \
-
 
 sudo vi /etc/ansible/hosts\
 add -> \
