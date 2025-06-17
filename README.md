@@ -38,7 +38,7 @@ ansible --version
 
 sudo vi /etc/ansible/ansible.cfg\
 
-add -> 
+add -> \
 [defaults] \
 inventory = /etc/ansible/hosts \
 remote_user = ubuntu \
@@ -46,7 +46,7 @@ private_key_file = /home/ubuntu/.ssh/id_ed25519 \
 
 
 sudo vi /etc/ansible/hosts\
-add -> 
+add -> \
 [webservers]\
 privateIP's of nodes - save
 
